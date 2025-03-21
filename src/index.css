@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
+  @apply bg-background text-text font-sans;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +14,69 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@layer components {
+  .btn {
+    @apply px-5 py-3 rounded-2xl transition-all duration-200 font-medium transform hover:scale-105;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white shadow-soft transition-all duration-300;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(to right, theme('colors.primary'), theme('colors.secondary'));
+    @apply transform scale-105;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-white shadow-soft transition-all duration-300;
+  }
+  
+  .btn-accent:hover {
+    background: linear-gradient(to right, theme('colors.accent'), theme('colors.primary'));
+    @apply transform scale-105;
+  }
+  
+  .section-heading {
+    @apply text-3xl md:text-4xl font-display font-bold mb-6 text-primary;
+  }
+  
+  .section-subheading {
+    @apply text-xl md:text-2xl font-display font-medium mb-4 text-secondary;
+  }
+  
+  .container-custom {
+    @apply max-w-4xl mx-auto px-4 py-8;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl shadow-bubble p-6 md:p-8 hover:shadow-lg transition-shadow duration-300;
+  }
+  
+  .quote {
+    @apply my-8 border-l-4 border-accent pl-6 py-4 rounded-r-xl italic font-handwritten text-lg;
+    background: linear-gradient(to right, theme('colors.accent/15'), theme('colors.primary/5'));
+  }
+  
+  .bubble-tag {
+    @apply inline-block bg-softgreen text-text px-4 py-1 rounded-full text-sm font-medium m-1;
+  }
+  
+  .card-gradient {
+    @apply card relative overflow-hidden border-t-4 border-l-4 border-r-0 border-b-0;
+    border-image: linear-gradient(to right, theme('colors.primary'), theme('colors.accent')) 1;
+  }
+  
+  .card-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, theme('colors.accent/5'), theme('colors.primary/10'));
+    pointer-events: none;
+  }
 }
