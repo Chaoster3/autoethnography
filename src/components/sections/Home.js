@@ -16,7 +16,7 @@ const Home = ({ onNavigate }) => {
         <div className="card hover:rotate-1 transition-transform">
           <h2 className="section-subheading font-handwritten">About This Website</h2>
           <p className="mb-4">
-            This website documents my autoethnography on adjusting to a new social environment when transitioning from high school to college. I've organized it chronologically into five sections.
+            This website documents my autoethnography on adjusting to a new social environment when transitioning from high school to college. I've organized it chronologically into six sections.
           </p>
         </div>
         

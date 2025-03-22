@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionNavigation from '../SectionNavigation';
-
+import ImageWithCaption from '../ImageWithCaption';
 const Section4 = ({ onNavigate, prevSection, nextSection }) => {
   return (
     <div className="container-custom">
@@ -15,9 +15,17 @@ const Section4 = ({ onNavigate, prevSection, nextSection }) => {
           Some of my EH5 friends are still close to me today. However, in retrospect, I now realize that solely relying on this social circle may have been a mistake. Because I already had a comfortable group of friends, I felt little motivation to branch out and meet other freshmen. This was especially true since KCECH was geographically isolated from some of the other freshman dorms.
         </p>
         
-        <p>
+        <p className="mb-16">
           Additionally, these friendships were largely based on convenience. Having a floor lounge where I knew I would automatically see friends prevented me from needing to worry about making plans or putting in significant effort to maintain relationships. While this made socializing easy, it also meant I was receiving less practice in developing the skills necessary to sustain friendships in less structured settings, which I would need once I no longer lived in the same place as all my friends.
         </p>
+
+        <ImageWithCaption 
+          src="/images/section4.jpg" 
+          alt="Image of me and my friends from Regis" 
+          caption="Playing trivia with friends in the EH5 lounge."
+          width="2/3"
+          align="center"
+        />
       </div>
       
       <SectionNavigation 

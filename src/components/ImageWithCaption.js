@@ -3,7 +3,7 @@ import React from 'react';
 const ImageWithCaption = ({ src, alt, caption, width = 'full', align = 'center', rounded = true }) => {
   const alignClasses = {
     left: 'mr-auto',
-    center: 'mx-auto',
+    center: 'mx-auto text-center',
     right: 'ml-auto'
   };
 
@@ -15,11 +15,11 @@ const ImageWithCaption = ({ src, alt, caption, width = 'full', align = 'center',
   };
 
   return (
-    <figure className={`my-8 ${alignClasses[align]}`}>
+    <figure className={`my-8 ${alignClasses[align]} flex flex-col items-center`}>
       <img 
         src={src} 
         alt={alt || caption} 
-        className={`${widthClasses[width]} ${rounded ? 'rounded-xl' : ''} shadow-soft`}
+        className={`${widthClasses[width]} ${rounded ? 'rounded-xl' : ''} shadow-soft block`}
       />
       {caption && (
         <figcaption className="mt-2 text-center text-sm text-gray-500 font-handwritten text-base italic">
