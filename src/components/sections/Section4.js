@@ -21,7 +21,7 @@ const Section4 = ({ onNavigate, prevSection, nextSection }) => {
 
         <ImageWithCaption 
           src="/images/section4.jpg" 
-          alt="Image of me and my friends from Regis" 
+          alt="Image of me and friends in the EH5 lounge" 
           caption="Playing trivia with friends in the EH5 lounge."
           width="2/3"
           align="center"
