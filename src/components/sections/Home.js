@@ -30,23 +30,29 @@ const Home = ({ onNavigate }) => {
       </div>
       
       <div className="card mb-12 relative overflow-hidden">
-        <h2 className="section-heading text-center font-handwritten relative z-10">Sections</h2>
-        <div className="space-y-6 relative z-10">
+        <h2 className="section-heading text-center font-handwritten relative z-10 mb-8">Sections</h2>
+        <div className="space-y-4 relative z-10">
           {[1, 2, 3, 4, 5, 6].map((num) => (
-            <div key={num} className="border-l-4 border-primary pl-4 py-3 hover:bg-primary/5 rounded-r-2xl transition-colors">
-              <h3 className="font-medium text-lg mb-1">
-                <button 
-                  onClick={() => onNavigate(`section${num}`)}
-                  className="text-secondary hover:text-primary font-display transition-colors"
-                >
-                  {num === 1 && "Introduction"}
-                  {num === 2 && "High School: A Structured Social Life"}
-                  {num === 3 && "Entering College: Facing New Social Challenges"}
-                  {num === 4 && "Finding Comfort in KCECH"}
-                  {num === 5 && "Now: Learning to Navigate Friendships Differently"}
-                  {num === 6 && "Conclusion"}
-                </button>
-              </h3>
+            <div 
+              key={num} 
+              className="transition-all duration-300 group"
+              onClick={() => onNavigate(`section${num}`)}
+            >
+              <div className="flex items-center bg-white rounded-xl p-4 border-l-4 border-primary shadow-sm hover:shadow-md hover:translate-x-1 hover:bg-primary/5 cursor-pointer transition-all duration-300">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold mr-4 group-hover:bg-primary group-hover:text-white transition-all">
+                  {num}
+                </div>
+                <div>
+                  <h3 className="font-medium text-lg group-hover:text-accent transition-colors">
+                    {num === 1 && "Introduction"}
+                    {num === 2 && "High School: A Structured Social Life"}
+                    {num === 3 && "Entering College: Facing New Social Challenges"}
+                    {num === 4 && "Finding Comfort in KCECH"}
+                    {num === 5 && "Now: Learning to Navigate Friendships Differently"}
+                    {num === 6 && "Conclusion"}
+                  </h3>
+                </div>
+              </div>
             </div>
           ))}
         </div>
