@@ -6,11 +6,12 @@ const Navbar = () => {
   
   const navItems = [
     { title: 'Home', id: 'home' },
-    { title: 'Section 1', id: 'section1' },
-    { title: 'Section 2', id: 'section2' },
-    { title: 'Section 3', id: 'section3' },
-    { title: 'Section 4', id: 'section4' },
-    { title: 'Section 5', id: 'section5' },
+    { title: 'Introduction', id: 'section1' },
+    { title: 'High School', id: 'section2' },
+    { title: 'College', id: 'section3' },
+    { title: 'KCECH', id: 'section4' },
+    { title: 'Now', id: 'section5' },
+    { title: 'Conclusion', id: 'section6' },
   ];
 
   // Listen for active section updates from the content area
@@ -47,7 +48,7 @@ const Navbar = () => {
               onClick={() => handleNavigation('home')} 
               className="font-display text-xl font-bold transform hover:scale-105 transition-transform"
             >
-              My Autoethnography
+              Sam Ngiam
             </button>
           </div>
           

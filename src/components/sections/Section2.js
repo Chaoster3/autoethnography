@@ -4,36 +4,19 @@ import SectionNavigation from '../SectionNavigation';
 const Section2 = ({ onNavigate, prevSection, nextSection }) => {
   return (
     <div className="container-custom">
-      <h1 className="section-heading font-handwritten text-center">Section 2: New Horizons</h1>
+      <h1 className="section-heading font-handwritten text-center">High School: A Structured Social Life</h1>
       
-      <div className="card card-gradient mb-8">
-        <h2 className="section-subheading font-handwritten">Moving Forward</h2>
+      <div className="card mb-8">
         <p className="mb-4">
-          After the experiences in section one, I found myself exploring new territory...
-          [Add your continuing story here in a casual, conversational tone]
+          Before college, I attended Regis High School, an all-boys Catholic school in New York City known for its academic rigor. Since all students received full scholarships, the school attracted individuals from across the tri-state area. I personally lived in New Jersey, commuting around 90 minutes each way to school. In a grade of around 135 students, there was a strong sense of brotherhood and camaraderie.
         </p>
         
-        <div className="grid md:grid-cols-2 gap-6 my-8">
-          <div className="bg-accent/10 p-5 rounded-xl">
-            <h3 className="font-display text-lg mb-2 text-primary">Memorable Moment #1</h3>
-            <p>That time when... [add a brief story]</p>
-          </div>
-          <div className="bg-softgreen/20 p-5 rounded-xl">
-            <h3 className="font-display text-lg mb-2 text-primary">Memorable Moment #2</h3>
-            <p>I'll never forget when... [add another brief story]</p>
-          </div>
-        </div>
-        
-        <div className="quote">
-          <p className="text-gray-700">
-            "Sometimes you have to take a step back to see the whole picture..."
-          </p>
-        </div>
-        
-        <h2 className="section-subheading font-handwritten mt-8">Connections</h2>
         <p className="mb-4">
-          How these experiences connected to broader themes and ideas...
-          [Add your analysis here]
+          After reflecting and reminiscing with some friends, I believe this tight-knit community formed through our shared experiences of long commutes and demanding coursework. We spent long hours studying together, helping each other with assignments, and navigating unpredictable public transportation. Every Regian knew what it was like to pull an all-nighter writing an English essay or get stuck at a train station waiting to go home, and these unique struggles made socialization effortless.
+        </p>
+        
+        <p>
+          Regis' class scheduling approach further reinforced this social cohesion for me. Each year, students were placed in an "advisement" of 14 peers who would take all their classes together. By chance, I was placed in practically the same advisement group throughout my four years there, meaning I attended almost all of my classes with the exact same people. This created a stable and consistent social circle that required little effort to maintain. Simply due to the amount of time I spent with these peers, friendship was inevitable and not something I had to actively pursue. In retrospect, I never needed to develop the skills for seeking out new connections because my social world was automatically formed around me.
         </p>
       </div>
       

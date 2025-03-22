@@ -8,50 +8,45 @@ const Home = ({ onNavigate }) => {
           My Autoethnography
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto font-handwritten">
-          A personal journey through memories, experiences, and reflections
+          Transitioning from high school to college
         </p>
       </div>
       
       <div className="grid md:grid-cols-2 gap-6 mb-12">
         <div className="card hover:rotate-1 transition-transform">
-          <h2 className="section-subheading font-handwritten">About This Project</h2>
+          <h2 className="section-subheading font-handwritten">About This Website</h2>
           <p className="mb-4">
-            Hey there! This is my autoethnography project where I share my personal journey 
-            and experiences related to [your topic]. I've organized my story chronologically
-            so you can follow along as it unfolds. Hope you enjoy!
+            This website documents my autoethnography on adjusting to a new social environment when transitioning from high school to college. I've organized it chronologically into five sections.
           </p>
         </div>
         
         <div className="card hover:-rotate-1 transition-transform">
           <h2 className="section-subheading font-handwritten">How to Navigate</h2>
           <p className="mb-4">
-            Feel free to explore my story however you want! You can use the fun buttons in the 
-            navigation bar, or the section links below. Each section builds on the previous one,
-            but they can also be read independently.
+            You can use the buttons in the 
+            navigation bar, the section links below, or the buttons at the bottom of the page to navigate to each section.
           </p>
         </div>
       </div>
       
       <div className="card mb-12 relative overflow-hidden">
-        <h2 className="section-heading text-center font-handwritten relative z-10">My Journey</h2>
+        <h2 className="section-heading text-center font-handwritten relative z-10">Sections</h2>
         <div className="space-y-6 relative z-10">
-          {[1, 2, 3, 4, 5].map((num) => (
-            <div key={num} className="border-l-4 border-accent pl-4 py-3 hover:bg-blue-50/50 rounded-r-2xl transition-colors">
+          {[1, 2, 3, 4, 5, 6].map((num) => (
+            <div key={num} className="border-l-4 border-primary pl-4 py-3 hover:bg-primary/5 rounded-r-2xl transition-colors">
               <h3 className="font-medium text-lg mb-1">
                 <button 
                   onClick={() => onNavigate(`section${num}`)}
-                  className="text-primary hover:text-secondary font-display"
+                  className="text-secondary hover:text-primary font-display transition-colors"
                 >
-                  Section {num}
+                  {num === 1 && "Introduction"}
+                  {num === 2 && "High School: A Structured Social Life"}
+                  {num === 3 && "Entering College: Facing New Social Challenges"}
+                  {num === 4 && "Finding Comfort in KCECH"}
+                  {num === 5 && "Now: Learning to Navigate Friendships Differently"}
+                  {num === 6 && "Conclusion"}
                 </button>
               </h3>
-              <p className="text-gray-600 font-handwritten text-lg">
-                {num === 1 && "Where it all began... the first chapter of my story"}
-                {num === 2 && "New experiences and perspectives that changed my outlook"}
-                {num === 3 && "Challenges, growth, and unexpected lessons"}
-                {num === 4 && "The turning points that shaped my understanding"}
-                {num === 5 && "Reflecting on the journey and what it all means"}
-              </p>
             </div>
           ))}
         </div>

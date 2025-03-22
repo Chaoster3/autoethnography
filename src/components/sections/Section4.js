@@ -4,36 +4,19 @@ import SectionNavigation from '../SectionNavigation';
 const Section4 = ({ onNavigate, prevSection, nextSection }) => {
   return (
     <div className="container-custom">
-      <h1 className="section-heading font-handwritten text-center">Section 4: Turning Points</h1>
+      <h1 className="section-heading font-handwritten text-center">Finding Comfort in KCECH</h1>
       
       <div className="card mb-8">
-        <h2 className="section-subheading font-handwritten">Critical Moments</h2>
         <p className="mb-4">
-          There were several pivotal moments that changed my perspective...
-          [Describe your turning points]
+          In response to this unfamiliarity, I instinctively gravitated toward the most structured social space available—my dormitory. I lived in King's Court English College House (KCECH), a smaller, more isolated dorm compared to the Quad where most freshmen lived. Falling back on how I had made friends in high school, I grew closer to people on my floor, English House 5 (EH5), since I saw them regularly when entering and exiting my room. Our floor quickly formed a tight-knit community, utilizing our central lounge area as a meeting area to find friends whenever we were not in class. This became a gathering place where we played games like trivia and Dance Dance Revolution regularly. My peers on EH5 became my first group of friends at Penn, and they were my social anchor throughout freshman year.
         </p>
         
-        <div className="grid md:grid-cols-2 gap-6 my-8">
-          <div className="bg-accent/10 p-5 rounded-xl">
-            <h3 className="font-display text-lg mb-2 text-primary">Turning Point #1</h3>
-            <p>When I realized that... [describe a key turning point]</p>
-          </div>
-          <div className="bg-softgreen/20 p-5 rounded-xl">
-            <h3 className="font-display text-lg mb-2 text-primary">Turning Point #2</h3>
-            <p>The moment I understood... [describe another turning point]</p>
-          </div>
-        </div>
-        
-        <div className="quote">
-          <p className="text-gray-700">
-            "Looking back, I can see how these moments shaped who I am today..."
-          </p>
-        </div>
-        
-        <h2 className="section-subheading font-handwritten mt-8">New Directions</h2>
         <p className="mb-4">
-          These pivotal moments led me down new paths that I hadn't considered before...
-          [Add more details about the impact of these turning points]
+          Some of my EH5 friends are still close to me today. However, in retrospect, I now realize that solely relying on this social circle may have been a mistake. Because I already had a comfortable group of friends, I felt little motivation to branch out and meet other freshmen. This was especially true since KCECH was geographically isolated from some of the other freshman dorms.
+        </p>
+        
+        <p>
+          Additionally, these friendships were largely based on convenience. Having a floor lounge where I knew I would automatically see friends prevented me from needing to worry about making plans or putting in significant effort to maintain relationships. While this made socializing easy, it also meant I was receiving less practice in developing the skills necessary to sustain friendships in less structured settings, which I would need once I no longer lived in the same place as all my friends.
         </p>
       </div>
       

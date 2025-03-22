@@ -4,39 +4,20 @@ import SectionNavigation from '../SectionNavigation';
 const Section5 = ({ onNavigate, prevSection, nextSection }) => {
   return (
     <div className="container-custom">
-      <h1 className="section-heading font-handwritten text-center">Section 5: Reflections</h1>
+      <h1 className="section-heading font-handwritten text-center">Now: Learning to Navigate Friendships Differently</h1>
       
       <div className="card mb-8">
-        <h2 className="section-subheading font-handwritten">Looking Back</h2>
         <p className="mb-4">
-          As I reflect on the entire journey, I can see how each experience connected to form a larger pattern...
-          [Add your reflections on the whole journey]
+          As I progressed through college, I gradually recognized the importance of expanding my social horizons. After freshman year, the EH5 community became spread out across different sophomore dorms. I realized that in order to stay connected with the friends I had been closest to, I needed to take the initiative in making plans and staying in touch. This shift initially felt unnatural, as I had been used to simply seeing friends automatically when I returned to my dorm. Over time, however, I realized that meaningful friendships are built on more than just convenience and grew more accustomed to keeping up with people through my own efforts rather than circumstance.
         </p>
         
-        <div className="quote">
-          <p className="text-gray-700">
-            "The meaning of our experiences often becomes clear only when we look back at them..."
-          </p>
-        </div>
-        
-        <h2 className="section-subheading font-handwritten mt-8">Synthesis</h2>
         <p className="mb-4">
-          Bringing all these experiences together, I've come to understand...
-          [Add your concluding thoughts]
+          With my sophomore dorm lacking the strong closeness of KCECH, I also began extending myself into new social circles. By becoming a teaching assistant for a class and joining the UPenn Climbing Club, I found new communities of like-minded friends. I also found that collaborating with fellow computer science majors in classes, hackathons, and group projects naturally led me to form strong friendships. In fact, this website is evidence of the knowledge and skills I've developed alongside friends in my major. While being intentional about forming new friendships was again initially unfamiliar, I've found that I have become naturally more comfortable with meeting and befriending new people in various settings as I've encountered more and more people in college.
         </p>
         
-        <h2 className="section-subheading font-handwritten mt-8">Moving Forward</h2>
-        <p className="mb-4">
-          This journey has prepared me for what's next in my life by...
-          [Add your thoughts about how these experiences will shape your future]
+        <p>
+          This diversification has made my social life more robust and fulfilling, preventing me from feeling overly dependent on a single group. Additionally, it has broadened my understanding of what friendship looks like. In high school, my closest friendships were defined simply by the people I saw daily over four years. In college, my friendships take more diverse forms—some based on shared academic interests, others on extracurricular activities, and some on simple social compatibility. I have become more comfortable with the idea that friendships do not all have to fit the same mold and that relationships can evolve over time.
         </p>
-        
-        <div className="bg-accent/10 p-6 rounded-xl mt-8">
-          <h3 className="font-display text-xl mb-3 text-primary text-center">Thank You for Joining Me</h3>
-          <p className="text-center font-handwritten text-lg">
-            I hope my story has resonated with you in some way. Thanks for taking the time to read about my journey!
-          </p>
-        </div>
       </div>
       
       <SectionNavigation 
@@ -44,15 +25,6 @@ const Section5 = ({ onNavigate, prevSection, nextSection }) => {
         nextSection={nextSection}
         onNavigate={onNavigate}
       />
-      
-      <div className="text-center mt-8">
-        <button 
-          onClick={() => onNavigate('home')} 
-          className="btn bg-accent text-white hover:bg-accent/80 shadow-soft"
-        >
-          Back to Home
-        </button>
-      </div>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center">
           <p className="mt-1 text-sm opacity-80 font-handwritten text-lg">
-            Created for my Autoethnography Class Assignment
+            Created for my Autoethnography Assignment in PSCI 2203 / HSOC 2312
           </p>
         </div>
       </div>
